@@ -290,7 +290,136 @@ const PricingWrapper = styled.section`
   margin-right:-5.4rem;
   -webkit-transform: translateY(0%) translateX(0%) rotate(14deg);
 }
+.product_hero{
+  height:90vh;
+  display:flex;
+}
+.product_hero_text{
+  flex:1;
+  margin:4rem;
+  
+}
+.product_hero_text h1{
+  color: #FFF;
+font-family: Qanelas Soft;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: ${props => props.theme.whiteToBlack};
+}
+.product_hero_text h1 span{
+  color: ${props => props.theme.secondaryColor};
+}
+.product_hero_text p{
+  padding-top:2rem;
+  color: #D9D9D9;
+font-family: Qanelas Soft;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+color: ${props => props.theme.whiteToBlack};
+}
+.btn Button{
+  color:black;
+  font-size:18px;
+  font-weight:700;
+  margin-top:1rem;
+}
+.product_hero_img{
+  flex:1;
+  
+}
+.product_cards{
+  min-height:90vh;
+}
+.product_cards h2{
+  text-align:center;
+  font-size: 56px;
+font-style: normal;
+font-weight: 700;
+}
+.product_cards .card{
+  max-width:40vw;
+  border-radius: 20px;
+  background-color: ${props => props.theme.grey212121ToGreyF0F0F0};
+padding:2rem;
+margin:2rem;
+}
+.cards{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.card_head{
+  display:flex;
+  
+}
+.card_head .logo{
+  padding:1rem;
+  padding-left:0;
+  padding-top:0;
+}
+.card_head .title{
+  padding:1rem;
+  padding-top:0;
+  font-size: 32px;
+font-weight: 700;
+}
+.card .text{
+  padding-bottom:2rem;
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+color:${props => props.theme.whiteToBlack};
+}
 
+.card_bottom{
+  border-top: 2px solid #2C2C2C;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between
+}
+.card_bottom .learn{
+  margin-bottom:20px;
+  text-decoration:underline;
+  text-decoration-color: ${props => props.theme.secondaryColor};
+  text-underline-offset: 8px;
+  cursor:pointer;
+  color:${props => props.theme.whiteToBlack};
+}
+.btns Button{
+margin:20px 10px;
+color:${props => props.theme.whiteToBlack};
+font-weight:700;
+font-size:20px;
+}
+.icons{
+  margin-left:200px;
+}
+.icons img{
+  padding:5px;
+}
+@media (max-width:768px){
+  .cards{
+    flex-direction:column;
+    justify-content:center;
+    margin:auto;
+
+  }
+  .card{
+    min-width:70vw;
+  }
+  .product_cards{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .icons{
+    margin-left:170px;
+  }
+}
 `;
 
 export default PricingWrapper;
