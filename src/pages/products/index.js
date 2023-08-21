@@ -13,6 +13,14 @@ import mesheryLogo from "../../assets/images/products/Meshery-logo-light.svg";
 import Nightawk from "../../assets/images/products/Nightawk.svg";
 import patterns from "../../assets/images/products/patterns.svg";
 import meshmap from "../../assets/images/products/meshmap.svg";
+import Product_slider from "./product_slider";
+
+const features = [
+  {
+    title: "hello",
+    description: "hello hello",
+  },
+];
 
 const CardsData = [
   {
@@ -66,6 +74,9 @@ const index = () => {
                 <Button title="Expolore Now" />
                 <Button primary title="Book a Demo" />
               </div>
+              <div className="product_slider">
+                {/* <Product_slider features={features} /> */}
+              </div>
             </div>
             <div className="product_hero_img">
               <img className="heroImg" src={product_hero_img} alt="" />
@@ -81,8 +92,10 @@ const index = () => {
                       <img src={card.logo} alt="" className="logo" />
                       <div className="title">{card.title}</div>
                       <div className="iconss">
-                        <img src={card.icon[0]} alt="" />
-                        <img src={card.icon[1]} alt="" />
+                        <>
+                          <img src={card.icon[0]} alt="" />
+                          <img src={card.icon[1]} alt="" />
+                        </>
                       </div>
                     </div>
                     <div className="text">{card.text}</div>
@@ -90,7 +103,7 @@ const index = () => {
                     <div className="card_bottom">
                       <div className="learn">Learn more</div>
                       <div className="btns">
-                        <Button title="See Demo" />
+                        {/* <Button title="See Demo" /> */}
                         <Button title="Subscribe" />
                       </div>
                     </div>
